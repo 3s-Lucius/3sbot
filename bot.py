@@ -6,7 +6,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 if not TOKEN:
     raise RuntimeError("BOT_TOKEN is missing")
 
-OWNER_ID = 5913511207  # Thay bằng Telegram ID của bạn
+OWNER_ID = 5913511207
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bot đang hoạt động ✅")
